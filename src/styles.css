@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: black;
+    color: white;   
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+h4{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cardName{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#buscar{
+    width: 20%;
+    margin-left: 40%;
+}
+
+.banlist{
+    margin-left: 1rem;
+    display: grid;
+    gap: 1rem;
+    align-items:stretch;
+    grid-template-columns: repeat(auto-fit, 8rem);
+}
+
+.cardData{
+    align-items: center;
+    text-align: justify;
+}
+.cardImage{
+    margin-left: 2rem;
+    width: 100px; 
+    height:150px;
+}
+
+.description{
+    margin-top: 0.5rem;
+    display: none;
+    flex-direction: column;
+    width: 12rem;
+}
+
+.cardData:hover .description{
+    display: flex;
+}
